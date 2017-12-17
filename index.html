@@ -1,4 +1,27 @@
 ---
 layout: page
+title: Home
 permalink: /
 ---
+
+<div class="home">
+  Welcome to my home page! I'm a (fairly new) GPU Architect at NVIDIA, where I get to play around with the performance
+  of future generations of GPUs. I joined NVIDIA after graduating with an M.S. in Computer Architecture from The
+  University of Texas. I also completed my undergraduate education at UT in Electrical and Computer Engineering and
+  Computer Science in 2015. Hook 'em! <br> <br>
+
+  If you want to do some reading, head over to my <a href="{{ site.url }}/blog">blog</a>, where I catalog a few
+  interesting things and a bunch of mundane things. I also like to hack at
+  <a href="{{ site.url }}/projects">projects</a> and am a <a href="{{ site.url }}/photography">hobbyist photographer</a>
+  in my free time. <br> <br>
+
+  <div class="recent-posts">
+      <h4>Recent Blog Posts</h4>
+        {% for post in site.posts limit:5 %}
+        <div>
+          {{ post.date | date: "%b %-d, %Y" }} &nbsp; <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+        </div>
+        {% endfor %}
+  </div>
+  </p>
+</div>

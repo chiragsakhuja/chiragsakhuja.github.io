@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-
+<h2>{{ site.owner.name }}'s Blog</h2>
+<a href="{{ site.url }}/blog/archive">archive view</a><br>
+<a href="{{ site.url }}/blog/categories">category view</a>
 {% for post in site.posts %}
 <section class="post">
+  <hr>
   <header class="post-header">
     <p class="post-meta">
       <span class="post-date">

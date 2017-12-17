@@ -2,9 +2,6 @@
 layout: default
 ---
 
-<a class="btn" href= "{{ site.url }}/" >
-  Home
-</a>
 {% if page.image.feature %}
 <div class="post-image-feature">
   <img class="feature-image" src=
@@ -40,6 +37,7 @@ layout: default
   </article>
 </div>
 
+<!-- disable share buttons
 <div class="share-buttons">
   <h6>Share on: </h6>
   <ul>
@@ -59,9 +57,12 @@ layout: default
       <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
     </li>
   </ul>
-</div><!-- end share-buttons -->
+</div>
+-->
 
+<!-- disable disqus
 {% if site.owner.disqus-shortname and page.comments == true %}
 <div id="disqus_thread"></div>
 {% include disqus.html %}
 {% endif %}
+-->

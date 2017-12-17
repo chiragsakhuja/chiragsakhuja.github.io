@@ -22,13 +22,16 @@
   padding: 0 30px;
   .avatar {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 100px;
     float: none;
+    @include media-query($medium-screen) {
+      width: 70%;
+      margin-bottom: 40px;
+    }
   }
   .author_name {
     display: block;
-    color: #85ae57;
+    color: $primary;
     font-size: 1.75em;
   }
   .author_job {
