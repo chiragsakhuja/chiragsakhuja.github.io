@@ -8,6 +8,8 @@ email:
 description: A simple and awesome blog theme powered by jekyll.
 url: http://chiragsakhuja.com
 keywords: []
+plugins:
+  - jekyll-seo-tag
 
 #
 ###################################
