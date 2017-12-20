@@ -20,6 +20,11 @@ highlighter:       rouge
 excerpt_separator: <!--more-->
 permalink:         /articles/:year-:month/:title
 
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title
+
 kramdown:
   auto_ids: true
   footnote_nr: 1

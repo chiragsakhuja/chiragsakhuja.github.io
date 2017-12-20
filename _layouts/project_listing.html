@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<h2>{{ site.owner.name }}'s Projects</h2>
+
+{% if site.owner.github %}
+Listed are some of the featured projects I have worked on. For additional projects, see
+<a href="https://github.com/{{ site.owner.github }}/">my Github</a>.
+{% endif %}
+
+{% for project in site.projects %}
+<section class="project">
+  <hr>
+
+  {% if project.image.feature %}
+  <div class="project-image-feature">
+    <img src=
+    {% if project.image.feature contains 'http' %}
+    "{{ project.image.feature }}"
+    {% else %}
+    "{{ site.url }}/img/{{ project.image.feature }}"
+    {% endif %}
+    alt="{{ project.title }} feature image">
+
+    {% if project.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ project.image.creditlink }}">{{ project.image.credit }}</a></span>
+    {% endif %}
+  </div><!-- /.image-wrap -->
+  {% endif %}
+
+  <header class="project-header">
+    <h4>
+      <a href="{{ site.url }}{{ project.url }}" class="project-title" title="{{ project.title }}">{{ project.title }}</a>
+      {% if project.link %}
+      <a class="project-title-link" href="{{ project.link }}" target="_blank" title="{{ project.title }}"><i class="fa fa-external-link"></i></a>
+      {% endif %}
+    </h4>
+    </header>
+
+    {% if project.excerpt %}
+    <div class="project-description">
+      <p>
+        {{ project.excerpt }}
+      </p>
+    </div>
+    {% endif %}
+
+</section>
+{% endfor %}

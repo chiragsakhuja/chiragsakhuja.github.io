@@ -1,0 +1,52 @@
+// Project Section
+section.project {
+  overflow: auto;
+}
+
+// Project title
+.project-title {
+
+}
+
+.project-title-link {
+  color: $primary;
+  font-size: 14px;
+  margin-left: 10px;
+  &:hover,
+  &:focus {
+    color: lighten($primary, 14%);
+  }
+}
+
+// Project meta
+.project-meta {
+  font-size: 13px;
+  font-weight: bold;
+  .project-date {
+    color: $secondary;
+  }
+  .project-author {
+    text-transform: uppercase;
+    color: $warning;
+  }
+  .project-cat {
+    text-transform: uppercase;
+    color: $warning;
+  }
+  .read-time {
+    color: $primary;
+  }
+}
+
+.project-image-feature {
+  max-width: 400px;
+  @include media-query($small-screen) {
+    margin: auto;
+    width: 80%;
+  }
+  @include media-query($medium-screen) {
+    width: 20%;
+    float: left;
+    margin-right: 20px;
+  }
+}
