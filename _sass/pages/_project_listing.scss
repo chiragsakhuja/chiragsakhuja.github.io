@@ -1,0 +1,40 @@
+// Project Section
+section.project {
+  width: 100%;
+  overflow: auto;
+}
+
+.project-info {
+  float: none;
+  @include media-query($medium-screen) {
+  }
+}
+
+// Project title
+.project-header {
+  .project-title {
+  }
+  margin-bottom: -20px; // not sure why I have to do this
+}
+
+.project-title-link {
+  color: $primary;
+  font-size: 14px;
+  margin-left: 10px;
+  &:hover,
+  &:focus {
+    color: lighten($primary, 14%);
+  }
+}
+
+.project-image-feature {
+  max-width: 400px;
+  overflow: auto;
+  margin: auto;
+  @include media-query($medium-screen) {
+    margin-right: 20px;
+    width: 20%;
+    min-width: 300px;
+    float: left;
+  }
+}

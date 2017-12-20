@@ -5,9 +5,9 @@
 #
 title: Chirag Sakhuja
 email: 
-description: A simple and awesome blog theme powered by jekyll.
+description: Chirag Sakhuja's home page.
 url: http://chiragsakhuja.com
-keywords: []
+keywords: ["Chirag Sakhuja"]
 
 #
 ###################################
@@ -19,6 +19,11 @@ markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
 permalink:         /articles/:year-:month/:title
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title
 
 kramdown:
   auto_ids: true
@@ -43,7 +48,7 @@ owner:
   facebook: #username
   google:
     plus: #username
-    analytics:
+    analytics: UA-111338282-1
     verify:
     ad-client:
     ad-slot:
