@@ -1,11 +1,20 @@
 // Project Section
 section.project {
+  width: 100%;
   overflow: auto;
 }
 
-// Project title
-.project-title {
+.project-info {
+  float: none;
+  @include media-query($medium-screen) {
+  }
+}
 
+// Project title
+.project-header {
+  .project-title {
+  }
+  margin-bottom: -20px; // not sure why I have to do this
 }
 
 .project-title-link {
@@ -18,35 +27,14 @@ section.project {
   }
 }
 
-// Project meta
-.project-meta {
-  font-size: 13px;
-  font-weight: bold;
-  .project-date {
-    color: $secondary;
-  }
-  .project-author {
-    text-transform: uppercase;
-    color: $warning;
-  }
-  .project-cat {
-    text-transform: uppercase;
-    color: $warning;
-  }
-  .read-time {
-    color: $primary;
-  }
-}
-
 .project-image-feature {
   max-width: 400px;
-  @include media-query($small-screen) {
-    margin: auto;
-    width: 80%;
-  }
+  overflow: auto;
+  margin: auto;
   @include media-query($medium-screen) {
-    width: 20%;
-    float: left;
     margin-right: 20px;
+    width: 20%;
+    min-width: 300px;
+    float: left;
   }
 }
