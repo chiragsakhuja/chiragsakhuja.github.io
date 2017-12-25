@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Designed and implemented an ARM CPU with value prediction
-excerpt: "I worked with three team members to design a ARM-based CPU from the ground up and develop a successful form
-          of value prediction. We first deisgned an in-order, pipelined implementation but then moved to an HPS-style
-          out-of-order implementation. After modeling the architecture in SystemC, we implemented the design in
-          structural Verilog with unit- and top-level SystemVerilog testbenches. To aid us with verification and
-          demoes, we also built a wide array of tooling."
+title: ARM CPU with value prediction
+excerpt: "I worked with three team members to design and implement an ARM-based CPU from the ground up and develop a
+          successful form of value prediction. We first designed an in-order pipeline, but eventually moved to an
+          HPS-style out-of-order microarchitecture. After modeling the architecture in SystemC, we implemented the
+          design in structural Verilog with unit- and top-level SystemVerilog testbenches. To aid us with verification
+          and demoes, we also built a wide array of tooling."
 showdate: false
+readmore: false
 image:
   feature: projects/arm-cpu/feature.jpg
   credit: Andrew Carr
